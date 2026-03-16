@@ -15,6 +15,9 @@ Since the acquisition of VMware by Broadcom, the software is now hosted on the B
 
 ### 📷 Documentation: The Download Process
 
+<details>
+<summary><b>Click to view detailed installation steps & screenshots</b></summary>
+
 #### 1. Portal Registration & Compliance
 *Creating a professional account on the Broadcom Support Portal to access enterprise virtualization tools.*
 
@@ -29,7 +32,7 @@ Since the acquisition of VMware by Broadcom, the software is now hosted on the B
 *click on download (make sure you have checked the terms and condition)*
 
 <img width="600" height="700" alt="Screenshot (69)" src="https://github.com/user-attachments/assets/0cf5ec7c-c6d7-4e2b-a330-c617d3ae5880" />
-
+</details>
 
 ## 🏗️ Phase 2: Windows Server 2022 Installation
 
