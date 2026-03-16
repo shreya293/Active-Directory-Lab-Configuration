@@ -47,9 +47,9 @@ For a clean portfolio experience, I have summarized the core installation steps 
 <summary><b>Click to view detailed installation steps & screenshots</b></summary>
 
 #### 1. Virtual Hardware Configuration
-I provisioned the VM with **2GB of RAM** and **2 vCPUs**. While Windows Server can run on less, these specs ensure the "Desktop Experience" (GUI) remains responsive during lab tasks.
+I provisioned the VM with **More then 2GB of RAM** and **2 vCPUs**. While Windows Server can run on less, these specs ensure the "Desktop Experience" (GUI) remains responsive during lab tasks.
 
-<img src="<img  src="https://github.com/user-attachments/assets/70451f9e-753d-4b4b-b935-382d3e065058" width="600" height="700"/>
+<img  src="https://github.com/user-attachments/assets/70451f9e-753d-4b4b-b935-382d3e065058" width="600" height="700"/>
 
 #### 2. Selecting the Operating System Version
 During the setup boot, I selected **Windows Server 2022 Datacenter Evaluation (Desktop Experience)**. 
