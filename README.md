@@ -28,6 +28,6 @@ Since the acquisition of VMware by Broadcom, the software is now hosted on the B
 ![broadcom 2](https://github.com/user-attachments/assets/4178a151-3dd5-4fdd-b482-2219867a6b5d)
 
 #### 3. Finalizing Download (v17.6.4)
-<img width="1366" height="768" alt="Screenshot (73)" src="https://github.com/user-attachments/assets/e472fa51-c4a4-4a60-89bd-cecc87075c6f" />
+<img width="1307" height="619" alt="Screenshot (69)" src="https://github.com/user-attachments/assets/0cf5ec7c-c6d7-4e2b-a330-c617d3ae5880" />
 
 *Verifying the build version (17.6.4) and completing the download of the executable.*
