@@ -39,7 +39,15 @@ Since the acquisition of VMware by Broadcom, the software is now hosted on the B
 With the hypervisor ready, the next phase is deploying the core of our lab: the **Windows Server 2022** instance. This machine will eventually be promoted to a Domain Controller.
 
 ### 2.1 Sourcing the Operating System
-I obtained the Windows Server 2022 ISO through the **Microsoft Evaluation Center**. I specifically chose the **64-bit Edition** to ensure compatibility with modern hardware virtualization features.
+I obtained the Windows Server 2022 ISO through the **Microsoft Evaluation Center**. 
+
+<p align="center">
+  <img width="600" height="700" alt="Screenshot 2026-03-14 001154" src="https://github.com/user-attachments/assets/69dd3e84-66c0-4455-ab17-87412d668470" />
+  <br>
+  <i>Figure 1: Selecting the 64-bit ISO download for localized English (United States).</i>
+</p>
+
+Choosing the ISO format instead of a VHD (Virtual Hard Disk) allowed for a full manual installation, providing deeper control over the partitioning and initial setup phases.
 
 ---
 ### 🛠️ Step-by-Step Installation Gallery
@@ -72,7 +80,59 @@ After the files were copied and the system rebooted, I configured the built-in *
 
 </details>
 
+## 🏗️ Phase 3: Windows 11 Client Deployment
+
+The final piece of our lab infrastructure is the **Windows 11 Client**. This machine will serve as the target workstation that we will eventually join to the `SERVER_2022` domain.
+
+### 3.1 Meeting Windows 11 Requirements
+Deploying Windows 11 in a virtual environment requires specific security configurations that differ from older versions of Windows.
+* **TPM 2.0:** Enabled via VMware 'Virtual TPM' encryption.
+* **RAM:** 4GB (Minimum requirement for stable performance).
+* **Storage:** 64GB NVMe Virtual Disk.
+
 ---
+
+### 🛠️ Step-by-Step Client Gallery
+
+<details>
+<summary><b>Click to view detailed Client setup & screenshots</b></summary>
+
+#### 1. Encrypting for TPM Support
+Because Windows 11 requires a Trusted Platform Module (TPM), I configured the VM with 'Partial Encryption.' This allows VMware to emulate the TPM chip required for a successful installation.
+
+<img width="600" height="700" src="https://github.com/user-attachments/assets/8a045fec-f40c-4d21-90a7-961ca492321c" />
+
+#### 2. Hardware Summary
+I verified the hardware allocation to ensure the guest OS had sufficient resources to run the modern Windows 11 interface without lag.
+
+<img width="600" height="700" src="https://github.com/user-attachments/assets/848e0016-e019-45d4-aaa2-7335db1c1cb0" />
+
+#### 3. Out-of-Box Experience (OOBE)
+Once the installation files were copied, I moved through the OOBE phase, selecting the correct region (United States/India) and keyboard layouts to ensure system localization.
+
+<img width="600" height="700" alt="Screenshot (38)" src="https://github.com/user-attachments/assets/872e7ceb-6999-4f96-88d9-3342b56ba6c9" />
+
+#### 4. Account Integration & Sync
+I linked the machine to a Microsoft account. This step is useful for modern lab environments to test how cloud-synced accounts interact with local Active Directory domains later on.
+
+<img width="600" height="700" alt="Screenshot (63)" src="https://github.com/user-attachments/assets/9de5ec9f-9ba7-4530-931c-92d629d9a40f" />
+
+#### 5. Deployment Success
+The process concluded with a successful boot to the Windows 11 desktop, confirming the client is ready for network configuration.
+
+<img width="600" height="700" alt="Screenshot (66)" src="https://github.com/user-attachments/assets/994e8086-2f8f-47b5-9e68-97d3b76cd576" />
+
+</details>
+
+---
+
+### 📝 Infrastructure Milestone Reached
+At this point, the core lab environment is physically (virtually) built:
+1. **Hypervisor:** VMware Workstation Pro 17.6.4 Installed.
+2. **Server:** Windows Server 2022 Installed.
+3. **Client:** Windows 11 Professional Installed.
+---
+
 ### 📝 Phase 2 Technical Summary
 * **OS Version:** Windows Server 2022 Datacenter (v21H2)
 * **Installation Type:** Desktop Experience (GUI)
