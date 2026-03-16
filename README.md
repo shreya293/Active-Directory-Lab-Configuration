@@ -20,14 +20,14 @@ Since the acquisition of VMware by Broadcom, the software is now hosted on the B
 #### 1. Portal Registration & Compliance
 *Creating a professional account on the Broadcom Support Portal to access enterprise virtualization tools.*
 
-![broadcom 1](https://github.com/user-attachments/assets/4f8a4279-a38b-48ee-9d44-34fba3c2cf2b)
+<img src="https://github.com/user-attachments/assets/4f8a4279-a38b-48ee-9d44-34fba3c2cf2b" width="600" height="700" />
 
 #### 2. Software Selection
 *Navigating the product catalog to select the industry-standard VMware Workstation Pro 17.0.*
 
-![broadcom 2](https://github.com/user-attachments/assets/4178a151-3dd5-4fdd-b482-2219867a6b5d)
+<img src="https://github.com/user-attachments/assets/4178a151-3dd5-4fdd-b482-2219867a6b5d" width="600" height="700"/>
 
 #### 3. Finalizing Download (v17.6.4)
 *Verifying the build version (17.6.4) and completing the download of the executable.*
 
-<img width="500" height="500" alt="Screenshot (69)" src="https://github.com/user-attachments/assets/0cf5ec7c-c6d7-4e2b-a330-c617d3ae5880" />
+<img width="600" height="700" alt="Screenshot (69)" src="https://github.com/user-attachments/assets/0cf5ec7c-c6d7-4e2b-a330-c617d3ae5880" />
