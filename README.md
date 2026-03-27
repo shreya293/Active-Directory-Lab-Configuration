@@ -139,11 +139,13 @@ At this point, the core lab environment is physically (virtually) built:
 * **Storage:** 60GB Thin Provisioned Disk
 * **Final State:** Functional standalone server ready for Network Configuration.
 
-# 🛠️ Phase 4: PowerShell Environment Installation & Configuration
-
+## 📂 Phase 4 Breakdown
+* [View Sub-Phase 1: Server Setup](#sub-phase-1-server-setup)
+* [View Sub-Phase 2: Next Steps](#)
 This module documents the initial configuration of the Windows Server environment, specifically focusing on the deployment of Active Directory Domain Services (AD DS).
 
 <details>
+This module documents the initial configuration of the Windows Server environment, specifically focusing on the deployment of Active Directory Domain Services (AD DS).
 <summary><b>▶ Click to view detailed installation steps & screenshots</b></summary>
 
 <br>
