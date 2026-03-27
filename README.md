@@ -182,11 +182,9 @@ Selecting **Windows Server Migration Tools** and **Wireless LAN services**. Thes
 
 #### 5. Dashboard Configuration Overview
 Final verification of the Server Manager Dashboard. The interface now reflects the pending installation and integration of the selected core server roles.
+
 Note: restart the system once to ensure your roles and features are added correctly.
 ![Step 5](./Images/image%2015.png)
-
-</details>
----
 
 </details>
 
