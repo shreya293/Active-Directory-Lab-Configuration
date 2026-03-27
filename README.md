@@ -149,7 +149,7 @@ This documentation is split into separate modules to cover each technical stage 
 
 ### Module 4.1: Sub-Phase 1 (Preparation)
 Documentation covering downloading, verifying prerequisites, and initializing the setup wizard.
-> **[View Sub-Phase 1 Documentation](./04.1_SubPhase1.md)**
+> **[View Sub-Phase 1 Documentation](./04_Installation_Guide.md)**
 
 ---
 
