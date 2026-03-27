@@ -144,15 +144,13 @@ At this point, the core lab environment is physically (virtually) built:
 * 🖥️ **[View Phase 4.1: Server Role Configuration](#phase-4-1-server-role-configuration)** — *Focuses on AD DS and Feature provisioning.*
 * 🌳 **[View Phase 4.2: Domain Controller Promotion](#phase-4-2-domain-controller-promotion)** — *Focuses on promoting the server to a DC (singh.com).*
 ---
-
-## 🚀 Phase 4.1: Server Role Configuration
 <a name="phase-4-1-server-role-configuration"></a>
+## 🚀 Phase 4.1: Server Role Configuration
 
 This module documents the initial deployment of **Active Directory Domain Services (AD DS)** and essential server features.
 
 <details>
 <summary><b>▶ Click to view detailed installation steps & screenshots</b></summary>
-<a name="sub-phase-1-server-setup"></a>
 <br>
 
 #### 1. Initialize Server Manager
