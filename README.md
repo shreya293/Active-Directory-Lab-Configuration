@@ -140,11 +140,17 @@ At this point, the core lab environment is physically (virtually) built:
 * **Final State:** Functional standalone server ready for Network Configuration.
 
 ## 📂 Phase 4 Breakdown
-* [View Sub-Phase 1: Server Setup](#sub-phase-1-server-setup)
-* [View Sub-Phase 2: Next Steps](#)
+
+* 🖥️ **[View Phase 4.1: Server Role Configuration](#phase-4-1-server-role-configuration)** — *Focuses on AD DS and Feature provisioning.*
+* 🌳 **[View Phase 4.2: Domain Controller Promotion](#phase-4-2-domain-controller-promotion)** — *Focuses on promoting the server to a DC (singh.com).*
+---
+
+## 🚀 Phase 4.1: Server Role Configuration
+<a name="phase-4-1-server-role-configuration"></a>
+
+This module documents the initial deployment of **Active Directory Domain Services (AD DS)** and essential server features.
 
 <details>
-This module documents the initial configuration of the Windows Server environment, specifically focusing on the deployment of Active Directory Domain Services (AD DS).
 <summary><b>▶ Click to view detailed installation steps & screenshots</b></summary>
 <a name="sub-phase-1-server-setup"></a>
 <br>
@@ -181,6 +187,7 @@ Final verification of the Server Manager Dashboard. The interface now reflects t
 Note: restart the system once to ensure your roles and features are added correctly.
 ![Step 5](./Images/image%2015.png)
 
+</details>
 ---
 
 </details>
