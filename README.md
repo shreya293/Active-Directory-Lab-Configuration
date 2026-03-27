@@ -139,15 +139,32 @@ At this point, the core lab environment is physically (virtually) built:
 * **Storage:** 60GB Thin Provisioned Disk
 * **Final State:** Functional standalone server ready for Network Configuration.
 
-# 🛠️ Phase 4: PowerShell Environment Setup
+# 🛠️ Phase 4: PowerShell Environment Installation & Configuration
 
-This phase documents the step-by-step installation and configuration of the PowerShell environment.
+A detailed, 40-step visual guide to setting up and securing a complete PowerShell environment for administration and automation.
 
-| Step | Description | Screenshot Reference |
-| :--- | :--- | :--- |
-| **01** | Initializing the PowerShell 7 setup wizard. | ![Step 1](./images/01_setup_welcome.png) |
-| **02** | Selecting the default installation directory for consistency. | ![Step 2](./images/02_destination_path.png) |
-| **03** | Enabling 'Add PowerShell to Path' and 'Register Manifest' for global access. | ![Step 3](./images/03_optional_features.png) |
-| **04** | Monitoring the extraction of package files and system integration. | ![Step 4](./images/04_install_progress.png) |
-| **05** | Finalizing the installation and launching the application. | ![Step 5](./images/05_finish_launch.png) |
-| **06** | Running `$PSVersionTable` to verify a successful installation. | ![Step 6](./images/06_version_verification.png) |
+## 📂 Phase 4 Breakdown
+
+This documentation is split into separate modules to cover each technical stage of the lifecycle.
+
+### Module 4.1: Sub-Phase 1 (Preparation)
+Documentation covering downloading, verifying prerequisites, and initializing the setup wizard.
+> **[View Sub-Phase 1 Documentation](./04.1_SubPhase1.md)**
+
+---
+
+### Module 4.2: Sub-Phase 2 (Core Installation)
+Step-by-step visuals of the core installation wizard, path selection, and optional feature configuration.
+> **[View Sub-Phase 2 Documentation](./04.2_SubPhase2.md)**
+
+---
+
+### Module 4.3: Sub-Phase 3 (Security & Remoting)
+This critical module covers setting up execution policies and enabling PowerShell Remoting—the foundation for advanced administration.
+> **[View Sub-Phase 3 Documentation](./04.3_SubPhase3.md)**
+
+---
+
+### Module 4.4: Sub-Phase 4 (Final Verification)
+Post-installation testing, version checks, and connectivity validation.
+> **[View Sub-Phase 4 Documentation](./04.4_SubPhase4.md)**
