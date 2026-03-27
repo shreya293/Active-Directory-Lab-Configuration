@@ -141,29 +141,44 @@ At this point, the core lab environment is physically (virtually) built:
 
 # 🛠️ Phase 4: PowerShell Environment Installation & Configuration
 
-A detailed, 40-step visual guide to setting up and securing a complete PowerShell environment for administration and automation.
+This module documents the initial configuration of the Windows Server environment, specifically focusing on the deployment of Active Directory Domain Services (AD DS).
 
-# 🚀 Windows Server & PowerShell Portfolio
+<details>
+<summary><b>▶ Click to view detailed installation steps & screenshots</b></summary>
 
-## 📂 Phase 4 Breakdown
-* [View Sub-Phase 1: Server Setup](#sub-phase-1-server-setup)
-* [View Sub-Phase 2: Next Steps](#)
+<br>
+
+#### 1. Initialize Server Manager
+Launching the Dashboard and selecting **Add Roles and Features** to begin infrastructure setup.
+![Step 1](./Images/image%201.png)
 
 ---
+
+#### 2. Role-Based Installation Type
+Selecting **Role-based or feature-based installation**. This ensures the local server instance is provisioned with specific service capabilities for our domain environment.
+![Step 2](./Images/image%202.png)
+
+---
+
+#### 3. Active Directory Domain Services (AD DS) Setup
+Provisioning the **AD DS** role. *Note:* I have deliberately deselected unnecessary roles like Web Server (IIS) to harden the server and reduce the attack surface.
+![Step 3](./Images/image%203.png)
+
+---
+
+#### 4. Feature Selection & Migration Tools
+Selecting **Windows Server Migration Tools** and **Wireless LAN services**. These utilities are essential for managing infrastructure mobility and future data transfers.
+![Step 4](./Images/image%204.png)
+
+---
+
+#### 5. Dashboard Configuration Overview
+Final verification of the Server Manager Dashboard. The interface now reflects the pending installation and integration of the selected core server roles.
+![Step 5](./Images/image%205.png)
+
+---
+
+</details>
 
 This module documents the initial configuration of the Windows Server environment, specifically focusing on the deployment of Active Directory Domain Services (AD DS).
 
-## 📋 Server Role Deployment Walkthrough
-
-| Step | Action | Technical Description | Screenshot Reference |
-| :--- | :--- | :--- | :--- |
-| **01** | **Initialize Server Manager** | Launching the Dashboard and selecting **Add Roles and Features** to begin infrastructure setup. | ![Step 1](./images/image%201.png) |
-| **02** | **Role-Based Installation** | Selecting the standard deployment type to configure the local server with identity services. | ![Step 2](./images/image%202.png) |
-| **03** | **Active Directory Setup** | Provisioning **AD DS** (Active Directory Domain Services) while deselecting unnecessary roles like IIS to harden the server. | ![Step 3](./images/image%203.png) |
-| **04** | **Feature Provisioning** | Selecting **Windows Server Migration Tools** and LAN services required for the domain environment. | ![Step 4](./images/image%204.png) |
-| **05** | **Dashboard Overview** | Finalizing the selection phase. The dashboard now reflects the pending installation of the selected server roles. | ![Step 5](./images/image%205.png) |
-
----
-### Module 4.4: Sub-Phase 4 (Final Verification)
-Post-installation testing, version checks, and connectivity validation.
-> **[View Sub-Phase 4 Documentation](./04.4_SubPhase4.md)**
