@@ -158,23 +158,27 @@ Launching the Dashboard and selecting **Add Roles and Features** to begin infras
 Selecting **Role-based or feature-based installation**. This ensures the local server instance is provisioned with specific service capabilities for our domain environment.
 ![Step 2](./Images/image%202.png)
 
+For Server selection click on Next
+![Step 3](./Images/image%203.png)
+
 ---
 
 #### 3. Active Directory Domain Services (AD DS) Setup
 Provisioning the **AD DS** role. *Note:* I have deliberately deselected unnecessary roles like Web Server (IIS) to harden the server and reduce the attack surface.
-![Step 3](./Images/image%203.png)
+![Step 3](./Images/image%204.png)
 
 ---
 
 #### 4. Feature Selection & Migration Tools
 Selecting **Windows Server Migration Tools** and **Wireless LAN services**. These utilities are essential for managing infrastructure mobility and future data transfers.
-![Step 4](./Images/image%204.png)
+![Step 4](./Images/image%205.png)
 
 ---
 
 #### 5. Dashboard Configuration Overview
 Final verification of the Server Manager Dashboard. The interface now reflects the pending installation and integration of the selected core server roles.
-![Step 5](./Images/image%205.png)
+Note: restart the system once to ensure your roles and features are added correctly.
+![Step 5](./Images/image%2015.png)
 
 ---
 
