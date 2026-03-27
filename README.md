@@ -188,5 +188,5 @@ Note: restart the system once to ensure your roles and features are added correc
 
 </details>
 
-This module documents the initial configuration of the Windows Server environment, specifically focusing on the deployment of Active Directory Domain Services (AD DS).
+This sub-module documents the initial configuration of the Windows Server environment, specifically focusing on the deployment of Active Directory Domain Services (AD DS).
 
