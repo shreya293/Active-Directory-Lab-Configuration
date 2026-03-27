@@ -142,12 +142,11 @@ At this point, the core lab environment is physically (virtually) built:
 ## 📂 Phase 4 Breakdown
 * [View Sub-Phase 1: Server Setup](#sub-phase-1-server-setup)
 * [View Sub-Phase 2: Next Steps](#)
-This module documents the initial configuration of the Windows Server environment, specifically focusing on the deployment of Active Directory Domain Services (AD DS).
 
 <details>
 This module documents the initial configuration of the Windows Server environment, specifically focusing on the deployment of Active Directory Domain Services (AD DS).
 <summary><b>▶ Click to view detailed installation steps & screenshots</b></summary>
-
+<a name="sub-phase-1-server-setup"></a>
 <br>
 
 #### 1. Initialize Server Manager
