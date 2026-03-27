@@ -143,26 +143,24 @@ At this point, the core lab environment is physically (virtually) built:
 
 A detailed, 40-step visual guide to setting up and securing a complete PowerShell environment for administration and automation.
 
+# 🚀 Windows Server & PowerShell Portfolio
+
 ## 📂 Phase 4 Breakdown
-
-This documentation is split into separate modules to cover each technical stage of the lifecycle.
-
-### Module 4.1: Sub-Phase 1 (Preparation)
-Documentation covering downloading, verifying prerequisites, and initializing the setup wizard.
-> **[View Sub-Phase 1 Documentation](./04.1_Sub-Phase1/)**
----
-
-### Module 4.2: Sub-Phase 2 (Core Installation)
-Step-by-step visuals of the core installation wizard, path selection, and optional feature configuration.
-> **[View Sub-Phase 2 Documentation](./04.2_SubPhase2.md)**
+* [View Sub-Phase 1: Server Setup](#sub-phase-1-server-setup)
+* [View Sub-Phase 2: Next Steps](#)
 
 ---
 
-### Module 4.3: Sub-Phase 3 (Security & Remoting)
-This critical module covers setting up execution policies and enabling PowerShell Remoting—the foundation for advanced administration.
-> **[View Sub-Phase 3 Documentation](./04.3_SubPhase3.md)**
+## 🛠️ Sub-Phase 1: Server Setup
+<a name="sub-phase-1-server-setup"></a>
 
----
+| Step | Action | Technical Description | Screenshot Reference |
+| :--- | :--- | :--- | :--- |
+| **01** | **Start Server** | Initialize Server Manager and navigate to the Manage menu. | ![Step 1](./images/image%201.png) |
+| **02** | **Role Selection** | Selecting Role-based installation for AD DS deployment. | ![Step 2](./images/image%202.png) |
+| **03** | **AD DS Setup** | Provisioning Active Directory Domain Services. | ![Step 3](./images/image%203.png) |
+| **04** | **Features** | Selecting Migration Tools and LAN services. | ![Step 4](./images/image%204.png) |
+| **05** | **Dashboard** | Final verification of the Server Manager Dashboard. | ![Step 5](./images/image%205.png) |
 
 ### Module 4.4: Sub-Phase 4 (Final Verification)
 Post-installation testing, version checks, and connectivity validation.
