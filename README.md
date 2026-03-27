@@ -151,17 +151,19 @@ A detailed, 40-step visual guide to setting up and securing a complete PowerShel
 
 ---
 
-## 🛠️ Sub-Phase 1: Server Setup
-<a name="sub-phase-1-server-setup"></a>
+This module documents the initial configuration of the Windows Server environment, specifically focusing on the deployment of Active Directory Domain Services (AD DS).
+
+## 📋 Server Role Deployment Walkthrough
 
 | Step | Action | Technical Description | Screenshot Reference |
 | :--- | :--- | :--- | :--- |
-| **01** | **Start Server** | Initialize Server Manager and navigate to the Manage menu. | ![Step 1](./images/image%201.png) |
-| **02** | **Role Selection** | Selecting Role-based installation for AD DS deployment. | ![Step 2](./images/image%202.png) |
-| **03** | **AD DS Setup** | Provisioning Active Directory Domain Services. | ![Step 3](./images/image%203.png) |
-| **04** | **Features** | Selecting Migration Tools and LAN services. | ![Step 4](./images/image%204.png) |
-| **05** | **Dashboard** | Final verification of the Server Manager Dashboard. | ![Step 5](./images/image%205.png) |
+| **01** | **Initialize Server Manager** | Launching the Dashboard and selecting **Add Roles and Features** to begin infrastructure setup. | ![Step 1](./images/image%201.png) |
+| **02** | **Role-Based Installation** | Selecting the standard deployment type to configure the local server with identity services. | ![Step 2](./images/image%202.png) |
+| **03** | **Active Directory Setup** | Provisioning **AD DS** (Active Directory Domain Services) while deselecting unnecessary roles like IIS to harden the server. | ![Step 3](./images/image%203.png) |
+| **04** | **Feature Provisioning** | Selecting **Windows Server Migration Tools** and LAN services required for the domain environment. | ![Step 4](./images/image%204.png) |
+| **05** | **Dashboard Overview** | Finalizing the selection phase. The dashboard now reflects the pending installation of the selected server roles. | ![Step 5](./images/image%205.png) |
 
+---
 ### Module 4.4: Sub-Phase 4 (Final Verification)
 Post-installation testing, version checks, and connectivity validation.
 > **[View Sub-Phase 4 Documentation](./04.4_SubPhase4.md)**
