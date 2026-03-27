@@ -1,20 +1,17 @@
 # 🛠️ Sub-Phase 1: Windows Server Core Roles & Feature Configuration
 
-This module documents the initial configuration of the Windows Server environment, specifically focusing on the deployment of Active Directory Domain Services (AD DS) and necessary migration features.
+This module documents the initial configuration of the Windows Server environment, specifically focusing on the deployment of Active Directory Domain Services (AD DS).
 
 ## 📋 Server Role Deployment Walkthrough
 
 | Step | Action | Technical Description | Screenshot Reference |
 | :--- | :--- | :--- | :--- |
-| **01** | **Initialize Server Manager** | Launch the Server Manager Dashboard and navigate to the **Manage** menu to initiate the 'Add Roles and Features' wizard. | ![Step 1](./images/image%201.png) |
-| **02** | **Deployment Type** | Selecting **Role-based or feature-based installation** to configure the local server instance with specific service capabilities. | ![Step 2](./images/image%202.png) |
-| **03** | **Active Directory Setup** | Enabling **Active Directory Domain Services (AD DS)**. Note: The Web Server (IIS) role is deselected to minimize the server's attack surface and focus on Identity Management. | ![Step 3](./images/image%203.png) |
-| **04** | **Feature Selection** | Provisioning **Wireless LAN Services** and **Windows Server Migration Tools** to support infrastructure mobility and data transfer. | ![Step 4](./images/image%204.png) |
-| **05** | **Dashboard Overview** | Final verification of the Server Manager Dashboard post-selection, showing the pending installation status and role overview. | ![Step 5](./images/image%205.png) |
+| **01** | **Initialize Server Manager** | Launching the Dashboard and selecting **Add Roles and Features** to begin infrastructure setup. | ![Step 1](./images/image%201.png) |
+| **02** | **Role-Based Installation** | Selecting the standard deployment type to configure the local server with identity services. | ![Step 2](./images/image%202.png) |
+| **03** | **Active Directory Setup** | Provisioning **AD DS** (Active Directory Domain Services) while deselecting unnecessary roles like IIS to harden the server. | ![Step 3](./images/image%203.png) |
+| **04** | **Feature Provisioning** | Selecting **Windows Server Migration Tools** and LAN services required for the domain environment. | ![Step 4](./images/image%204.png) |
+| **05** | **Dashboard Overview** | Finalizing the selection phase. The dashboard now reflects the pending installation of the selected server roles. | ![Step 5](./images/image%205.png) |
 
 ---
-
-## 💡 System Administrator's Note
-When configuring a Domain Controller, it is best practice to only install necessary roles. By deselecting **Web Server (IIS)** in Step 3, we reduce unnecessary background services, which improves both system performance and security.
 
 [← Back to Phase 4 Main Page](./04_Installation_Guide.md)
