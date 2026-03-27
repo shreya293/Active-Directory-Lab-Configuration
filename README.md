@@ -138,3 +138,16 @@ At this point, the core lab environment is physically (virtually) built:
 * **Installation Type:** Desktop Experience (GUI)
 * **Storage:** 60GB Thin Provisioned Disk
 * **Final State:** Functional standalone server ready for Network Configuration.
+
+# 🛠️ Phase 4: PowerShell Environment Setup
+
+This phase documents the step-by-step installation and configuration of the PowerShell environment.
+
+| Step | Description | Screenshot Reference |
+| :--- | :--- | :--- |
+| **01** | Initializing the PowerShell 7 setup wizard. | ![Step 1](./images/01_setup_welcome.png) |
+| **02** | Selecting the default installation directory for consistency. | ![Step 2](./images/02_destination_path.png) |
+| **03** | Enabling 'Add PowerShell to Path' and 'Register Manifest' for global access. | ![Step 3](./images/03_optional_features.png) |
+| **04** | Monitoring the extraction of package files and system integration. | ![Step 4](./images/04_install_progress.png) |
+| **05** | Finalizing the installation and launching the application. | ![Step 5](./images/05_finish_launch.png) |
+| **06** | Running `$PSVersionTable` to verify a successful installation. | ![Step 6](./images/06_version_verification.png) |
