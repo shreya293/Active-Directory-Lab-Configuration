@@ -190,3 +190,68 @@ Note: restart the system once to ensure your roles and features are added correc
 
 This sub-module documents the initial configuration of the Windows Server environment, specifically focusing on the deployment of Active Directory Domain Services (AD DS).
 
+<a name="phase-4-2-domain-controller-promotion"></a>
+## 🌳 Phase 4.2: Domain Controller Promotion (singh.com)
+
+After role installation, the server must be promoted to a Domain Controller to establish the forest root. This module documents the configuration of the **singh.com** identity infrastructure.
+
+<details>
+<summary><b>▶ Click to view Domain Promotion steps & screenshots</b></summary>
+
+<br>
+
+#### 1. Post-Deployment Configuration Request
+Following the AD DS role installation, a notification in Server Manager indicates that additional configuration is required to "Promote this server to a domain controller."
+![Step 6](./Images/image%206.png)
+
+---
+
+#### 2. Deployment Configuration: New Forest Creation
+We select **"Add a new forest"** and define the Root Domain Name as `singh.com`. This initializes the top-level container for all future network objects.
+![Step 7](./Images/image%207.png)
+
+---
+
+#### 3. Domain Controller Options & DSRM
+Configuring the functional levels (Windows Server 2016) and setting the **Directory Services Restore Mode (DSRM)** password. This is a vital security credential for Active Directory recovery.
+![Step 8](./Images/image%208.png)
+
+---
+
+#### 4. DNS Options & Delegation
+The wizard prepares the DNS integration. A warning about delegation is standard here as we are creating the authoritative root zone for our private lab.
+![Step 9](./Images/image%209.png)
+
+---
+
+#### 5. NetBIOS Name Assignment
+The system verifies and assigns the NetBIOS name `SINGH`. This ensures legacy compatibility for naming services across the network.
+![Step 10](./Images/image%2010.png)
+
+---
+
+#### 6. Prerequisites Validation
+The 'Prerequisites Check' confirms the server meets all technical requirements for promotion. Once passed, we proceed with the actual promotion.
+![Step 11](./Images/image%2011.png)
+
+---
+
+#### 7. Promotion Progress & Automation
+PowerShell scripts execute in the background to configure the database (NTDS), logs, and SYSVOL folders required for AD operations.
+![Step 12](./Images/image%2012.png)
+
+---
+
+#### 8. Successful Promotion & Final Result
+The wizard confirms the server was successfully configured as a Domain Controller. The system then automatically reboots to apply the security changes.
+![Step 13](./Images/image%2013.png)
+
+---
+
+#### 9. System Reboot into the Domain
+The Windows Server initializes with its new identity. Upon logging in, the administrative account will now be part of the `SINGH` domain.
+![Step 14](./Images/image%2014.png)
+
+---
+
+</details>
