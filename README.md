@@ -257,7 +257,7 @@ The Windows Server initializes with its new identity. Upon logging in, the admin
 
 </details>
 
-<a name="phase-4-3-network-segmentation"></a>
+<a name="phase-4-3-network-infrastructure-verification"></a>
 ## 🌐 Phase 4.3: DHCP Scope & Network Segmentation (LAB1)
 
 This module documents the isolation of the lab environment using a **LAN Segment (LAB1)** and the configuration of the **DHCP Server Role** to automatically provision IP addresses.
@@ -269,6 +269,7 @@ This module documents the isolation of the lab environment using a **LAN Segment
 
 #### 1. Isolated LAN Segment Allocation (LAB1)
 Both the Windows Server and the Windows Client must be assigned to the same isolated **LAN Segment (`LAB1`)**. This creates a private network that prevents lab traffic from conflicting with the host system's actual physical network.
+We create a LAN Segment as LAB1 By clicking on Add and selecting it from dropdown menu.  
 ![Step 25](./Images/image%2025.png)
 
 ---
@@ -282,7 +283,7 @@ A Domain Controller **must** have a static IP. We configure the server's network
 ---
 
 #### 3. Initializing DHCP Scope Creation
-Navigating to the **DHCP Manager** from Server Manager Tools. We begin the process of defining an **IPv4 Scope** to allow the client to automatically receive network configurations.
+Navigating to the **DHCP** from Server Manager Tools. We begin the process of defining an **IPv4 Scope** to allow the client to automatically receive network configurations.
 ![Step 34](./Images/image%2034.png)
 
 ---
