@@ -142,7 +142,8 @@ At this point, the core lab environment is physically (virtually) built:
 ## 📂 Phase 4 Breakdown
 
 * 🖥️ **[View Phase 4.1: Server Role Configuration](#phase-4-1-server-role-configuration)** — *Focuses on AD DS and Feature provisioning.*
-* 🌳 **[View Phase 4.2: Domain Controller Promotion](#phase-4-2-domain-controller-promotion)** — *Focuses on promoting the server to a DC (singh.com).*
+* 🌳 **[View Phase 4.2: Domain Controller Promotion](#phase-4-2-domain-controller-promotion)** — *Establishing the singh.com forest root.*
+* 🌐 **[View Phase 4.3: Network Infrastructure & Domain Verification](#phase-4-3-network-infrastructure-verification)** — *LAB1 segmentation, DHCP Scope, and Client Connectivity test.*
 ---
 <a name="phase-4-1-server-role-configuration"></a>
 ## 🚀 Phase 4.1: Server Role Configuration
@@ -288,6 +289,7 @@ Navigating to the **DHCP Manager** from Server Manager Tools. We begin the proce
 
 #### 4. Scope Name & IP Address Pool (grouped)
 **Step 35 & 36:** We define the scope name as **`LAB1`** and establish the range of IP addresses that can be assigned to devices on this segmented network.
+CLick on New scope and then Click on Next
 * **Pool Range:** `192.168.10.100` – `192.168.10.200`
 * **Subnet Mask:** `255.255.255.0`
 ![Step 35](./Images/image%2035.png)
@@ -297,41 +299,23 @@ Navigating to the **DHCP Manager** from Server Manager Tools. We begin the proce
 
 #### 5. Confirming Scope Activation (grouped)
 **Step 37 & 38:** We define the **Router (Default Gateway)** as `192.168.10.1` and activate the scope. The green checkmark in DHCP Manager confirms that the lab network is now active and ready.
+In the Scope Name we enter random name and description
 ![Step 37](./Images/image%2037.png)
 ![Step 38](./Images/image%2038.png)
 
 ---
 
-</details>
-
-<br>
-
-<a name="phase-4-4-final-verification"></a>
-## 🏁 Phase 4.4: Infrastructure Verification & Final Test
-
-The final sub-phase documents the end-to-end verification of the Active Directory lab environment.
-
-<details>
-<summary><b>▶ Click to view Verification steps & screenshots</b></summary>
-
-<br>
-
-#### 1. Confirming Client IP Acquisition
-The Windows Client, also assigned to **LAB1**, automatically receives an IP address (e.g., `192.168.10.100`) from our DHCP server. We verify this using **`ipconfig /all`**.
+#### 6. Confirming Client IP Acquisition
+The Windows Client Machine, assign to **LAB1** which automatically receives an IP address (e.g., `192.168.10.100`) from our DHCP server. We verify this using **`ipconfig /all`**.
 ![Step 40](./Images/image%2040.png)
 
 ---
 
-#### 2. Joining the Client to the singh.com Domain
-The client is now ready to join the AD infrastructure. We navigate to System Properties and enter the domain name: `singh.com`. Successful connection is confirmed by a welcome message.
-*[Reference Grouped Images of this step in your folder]*
+#### 7. Final Domain Success Check: ADUC Verification
+The final "Proof of Concept" is verified within **Active Directory Users and Computers (ADUC)**. We can confirm that the client machine (`DESKTOP-UHG2A68`) and clicking on it we see it is now a registered member of the **`singh.com/Domain Computers`** group.
+![Final Verification](./Images/image%2041.png)
+</details>
 
 ---
-
-#### 3. Final Lab Success Check
-After the client reboots, we verify its presence in **Active Directory Users and Computers**. The computer account now exists within the `Computers` container of the `singh.com` domain.
-*[Reference Grouped Images of this step in your folder]*
-
----
-
+<br>
 </details>
