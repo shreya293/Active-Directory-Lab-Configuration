@@ -255,3 +255,83 @@ The Windows Server initializes with its new identity. Upon logging in, the admin
 ---
 
 </details>
+
+<a name="phase-4-3-network-segmentation"></a>
+## 🌐 Phase 4.3: DHCP Scope & Network Segmentation (LAB1)
+
+This module documents the isolation of the lab environment using a **LAN Segment (LAB1)** and the configuration of the **DHCP Server Role** to automatically provision IP addresses.
+
+<details>
+<summary><b>▶ Click to view Networking steps & screenshots</b></summary>
+
+<br>
+
+#### 1. Isolated LAN Segment Allocation (LAB1)
+Both the Windows Server and the Windows Client must be assigned to the same isolated **LAN Segment (`LAB1`)**. This creates a private network that prevents lab traffic from conflicting with the host system's actual physical network.
+![Step 25](./Images/image%2025.png)
+
+---
+
+#### 2. Configure Static IP on Domain Controller (IPAM)
+A Domain Controller **must** have a static IP. We configure the server's network adapter with a fixed address to ensure reliable Identity Management and DNS services.
+* **IPv4:** `192.168.10.1` (Lab Gateway)
+* **DNS:** `127.0.0.1` (Self-reference)
+![Step 33](./Images/image%2033.png)
+
+---
+
+#### 3. Initializing DHCP Scope Creation
+Navigating to the **DHCP Manager** from Server Manager Tools. We begin the process of defining an **IPv4 Scope** to allow the client to automatically receive network configurations.
+![Step 34](./Images/image%2034.png)
+
+---
+
+#### 4. Scope Name & IP Address Pool (grouped)
+**Step 35 & 36:** We define the scope name as **`LAB1`** and establish the range of IP addresses that can be assigned to devices on this segmented network.
+* **Pool Range:** `192.168.10.100` – `192.168.10.200`
+* **Subnet Mask:** `255.255.255.0`
+![Step 35](./Images/image%2035.png)
+![Step 36](./Images/image%2036.png)
+
+---
+
+#### 5. Confirming Scope Activation (grouped)
+**Step 37 & 38:** We define the **Router (Default Gateway)** as `192.168.10.1` and activate the scope. The green checkmark in DHCP Manager confirms that the lab network is now active and ready.
+![Step 37](./Images/image%2037.png)
+![Step 38](./Images/image%2038.png)
+
+---
+
+</details>
+
+<br>
+
+<a name="phase-4-4-final-verification"></a>
+## 🏁 Phase 4.4: Infrastructure Verification & Final Test
+
+The final sub-phase documents the end-to-end verification of the Active Directory lab environment.
+
+<details>
+<summary><b>▶ Click to view Verification steps & screenshots</b></summary>
+
+<br>
+
+#### 1. Confirming Client IP Acquisition
+The Windows Client, also assigned to **LAB1**, automatically receives an IP address (e.g., `192.168.10.100`) from our DHCP server. We verify this using **`ipconfig /all`**.
+![Step 40](./Images/image%2040.png)
+
+---
+
+#### 2. Joining the Client to the singh.com Domain
+The client is now ready to join the AD infrastructure. We navigate to System Properties and enter the domain name: `singh.com`. Successful connection is confirmed by a welcome message.
+*[Reference Grouped Images of this step in your folder]*
+
+---
+
+#### 3. Final Lab Success Check
+After the client reboots, we verify its presence in **Active Directory Users and Computers**. The computer account now exists within the `Computers` container of the `singh.com` domain.
+*[Reference Grouped Images of this step in your folder]*
+
+---
+
+</details>
