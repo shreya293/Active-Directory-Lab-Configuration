@@ -407,7 +407,7 @@ To ensure the client can always find the Domain Controller, we manually assign a
 #### 3. Domain Join Authentication (singh.com)
 We initiate the **Domain Join** process. After entering the target domain `singh.com`, we are prompted for administrative credentials. Providing the username as `Administrator` adn password  of window's server establishes the secure trust relationship.
 ![Step 47](./Images/image%2047.png)
-![Step 48](./Images/image%2048.png)
+![Step 48](./Images/image%2048.jpg)
 ![Step 49](./Images/image%2049.jpeg)
 
 ---
