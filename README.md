@@ -327,7 +327,7 @@ This phase documents the final provisioning of the Windows 11 Pro workstation, i
 <details>
 <summary><b>▶ Click to view Client Integration steps & screenshots</b></summary>
 <br>
-#### 1. System Personalization & Activation (Grouped)
+1. System Personalization & Activation (Grouped)
 The workstation is initialized. We verify the system identity as **Administrator** and proceed with Windows Activation. We enter the product key to upgrade the environment to **Windows 11 Pro**, which is required for Enterprise Domain features.
 ![Step 42](./Images/image%2042.png)
 ![Step 45](./Images/image%2045.jpeg)
