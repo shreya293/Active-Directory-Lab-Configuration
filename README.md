@@ -334,7 +334,7 @@ This phase documents the final provisioning of the Windows 11 Pro workstation, i
 
 #### 1. System Personalization & Activation (Grouped)
 **Steps 42-45:** The workstation is initialized. We verify the system identity as **Administrator** and proceed with Windows Activation. We enter the product key to upgrade the environment to **Windows 11 Pro**, which is required for Enterprise Domain features.
-![Step 42](./Images/image%2042.jpg)
+![Step 42](./Images/image%2042.jpeg)
 ![Step 45](./Images/image%2045.jpeg)
 
 ---
@@ -344,13 +344,13 @@ This phase documents the final provisioning of the Windows 11 Pro workstation, i
 * **IP Address:** `192.168.10.11`
 * **Subnet Mask:** `255.255.255.0`
 * **Preferred DNS:** `192.168.10.1` (Pointing directly to our Server)
-![Step 50](./Images/image%2050.jpg)
+![Step 50](./Images/image%2050.jpeg)
 
 ---
 
 #### 3. Domain Join Authentication (singh.com)
 **Steps 47-49:** We initiate the **Domain Join** process. After entering the target domain `singh.com`, we are prompted for administrative credentials. Providing the `Administrator@singh.com` password establishes the secure trust relationship.
-![Step 47](./Images/image%2047.jpg)
+![Step 47](./Images/image%2047.jpeg)
 ![Step 49](./Images/image%2049.jpeg)
 
 ---
