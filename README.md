@@ -289,7 +289,7 @@ Navigating to the **DHCP** from Server Manager Tools. We begin the process of de
 ---
 
 #### 4. Scope Name & IP Address Pool (grouped)
-**Step 35 & 36:** We define the scope name as **`LAB1`** and establish the range of IP addresses that can be assigned to devices on this segmented network.
+We define the scope name as **`LAB1`** and establish the range of IP addresses that can be assigned to devices on this segmented network.
 CLick on New scope and then Click on Next
 * **Pool Range:** `192.168.10.100` – `192.168.10.200`
 * **Subnet Mask:** `255.255.255.0`
@@ -299,7 +299,7 @@ CLick on New scope and then Click on Next
 ---
 
 #### 5. Confirming Scope Activation (grouped)
-**Step 37 & 38:** We define the **Router (Default Gateway)** as `192.168.10.1` and activate the scope. The green checkmark in DHCP Manager confirms that the lab network is now active and ready.
+We define the **Router (Default Gateway)** as `192.168.10.1` and activate the scope. The green checkmark in DHCP Manager confirms that the lab network is now active and ready.
 In the Scope Name we enter random name and description
 ![Step 37](./Images/image%2037.png)
 ![Step 38](./Images/image%2038.png)
@@ -331,14 +331,14 @@ This phase documents the final provisioning of the Windows 11 Pro workstation, i
 <br>
 
 #### 1. System Personalization & Activation (Grouped)
-**Steps 42-45:** The workstation is initialized. We verify the system identity as **Administrator** and proceed with Windows Activation. We enter the product key to upgrade the environment to **Windows 11 Pro**, which is required for Enterprise Domain features.
+The workstation is initialized. We verify the system identity as **Administrator** and proceed with Windows Activation. We enter the product key to upgrade the environment to **Windows 11 Pro**, which is required for Enterprise Domain features.
 ![Step 42](./Images/image%2042.png)
 ![Step 45](./Images/image%2045.jpeg)
 
 ---
 
 #### 2. Manual IP Configuration (Static Lab Addressing)
-**Step 50:** To ensure the client can always find the Domain Controller, we manually assign a static IP within the `LAB1` segment.
+To ensure the client can always find the Domain Controller, we manually assign a static IP within the `LAB1` segment.
 * **IP Address:** `192.168.10.11`
 * **Subnet Mask:** `255.255.255.0`
 * **Preferred DNS:** `192.168.10.1` (Pointing directly to our Server)
@@ -346,7 +346,7 @@ This phase documents the final provisioning of the Windows 11 Pro workstation, i
 ---
 
 #### 3. Domain Join Authentication (singh.com)
-**Steps 47-49:** We initiate the **Domain Join** process. After entering the target domain `singh.com`, we are prompted for administrative credentials. Providing the username as `Administrator` adn password  of window's server establishes the secure trust relationship.
+We initiate the **Domain Join** process. After entering the target domain `singh.com`, we are prompted for administrative credentials. Providing the username as `Administrator` adn password  of window's server establishes the secure trust relationship.
 ![Step 47](./Images/image%2047.png)
 ![Step 48](./Images/image%2048.jpeg)
 ![Step 49](./Images/image%2049.jpeg)
@@ -354,7 +354,7 @@ This phase documents the final provisioning of the Windows 11 Pro workstation, i
 ---
 
 #### 4. Final Network & DNS Verification (nslookup)
-**Step 51:** We perform a final CLI verification using **`ping`**, **`nslookup`**, and **`ipconfig`**.
+We perform a final CLI verification using **`ping`**, **`nslookup`**, and **`ipconfig`**.
 * **Ping Test:** Confirms low-latency connectivity to the Server (`192.168.10.1`).
 * **NSLookup:** Confirms the client is successfully resolving the `singh.com` name through the server's DNS role.
 ![Step 51](./Images/image%2051.png)
