@@ -316,9 +316,11 @@ The Windows Client Machine, assign to **LAB1** which automatically receives an I
 The final "Proof of Concept" is verified within **Active Directory Users and Computers (ADUC)**. We can confirm that the client machine (`DESKTOP-UHG2A68`) and clicking on it we see it is now a registered member of the **`singh.com/Domain Computers`** group.
 ![Final Verification](./Images/image%2041.png)
 
+</details>
 ---
 
 </details>
+
 <a name="phase-5-client-workstation-integration"></a>
 ## 💻 Phase 5: Client Workstation Integration
 
