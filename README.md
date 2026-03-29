@@ -144,6 +144,8 @@ At this point, the core lab environment is physically (virtually) built:
 * 🖥️ **[View Phase 4.1: Server Role Configuration](#phase-4-1-server-role-configuration)** — *Focuses on AD DS and Feature provisioning.*
 * 🌳 **[View Phase 4.2: Domain Controller Promotion](#phase-4-2-domain-controller-promotion)** — *Establishing the singh.com forest root.*
 * 🌐 **[View Phase 4.3: Network Infrastructure & Domain Verification](#phase-4-3-network-infrastructure-verification)** — *LAB1 segmentation, DHCP Scope, and Client Connectivity test.*
+* 👥 **[View Phase 4.4: User Management & Security Policies](#phase-4-4-user-management)** — *OU structure, user provisioning, and Logon Hour restrictions.*
+
 ---
 <a name="phase-4-1-server-role-configuration"></a>
 ### 🚀 Phase 4.1: Server Role Configuration
@@ -317,6 +319,58 @@ The final "Proof of Concept" is verified within **Active Directory Users and Com
 ![Final Verification](./Images/image%2041.png)
 
 </details>
+
+</details>
+
+<a name="phase-4-4-user-management"></a>
+## 👥 Phase 4.4: User Management & Security Policies
+
+Active Directory is the heart of identity management. This module documents the creation of a structured **Organizational Unit (OU)** hierarchy and the implementation of **Time-Based Access Control** for domain users.
+
+<details>
+<summary><b>▶ Click to view User Provisioning & Security steps</b></summary>
+
+<br>
+
+#### 1. Organizational Unit (OU) Hierarchy
+To maintain a professional and manageable directory, we establish a **Role-Based OU Structure**. This allows for the separate application of Group Policies (GPO) to different business departments.
+* **Departments Created:** `Finance and Accounting`, `Sales and Marketing`, and `Operational and Logistic`.
+![Step 52](./Images/image%2052.png)
+![Step 54](./Images/image%2054.png)
+
+---
+
+#### 2. Detailed User Provisioning (Alice M)
+We walk through the creation of a standard domain user within the **Finance and Accounting** OU. This includes defining the **User Logon Name (UPN)** and setting secure password parameters.
+![Step 56](./Images/image%2056.png)
+![Step 57](./Images/image%2057.png)
+
+---
+
+#### 3. Security Policy: Logon Hour Restrictions
+Following the **Principle of Least Privilege**, we implement time-based restrictions. For user `Alice M`, logon is permitted only during business hours (**Sunday to Thursday, 06:00 AM to 12:00 PM**). Any attempt to access the domain outside these hours will be denied by the Domain Controller.
+![Step 63](./Images/image%2063.png)
+
+
+---
+
+#### 4. Extended Identity Attributes
+To ensure data accuracy for administrative audits, we populate extended user attributes including **Office Description** and **International Address Details (Dubai, UAE)**.
+![Step 60](./Images/image%2060.png)
+![Step 61](./Images/image%2061.png)
+
+---
+
+#### 5. Departmental Verification (Final User List)
+The departmental OUs are now fully populated with active users, each ready to be managed under specific security and access policies.
+* **Finance:** Alice M, Bob A, Charlis D, Veer L.
+* **Operational:** Aarav Y, Advat A, Ishani J, Kyra S.
+* **Sales:** Bharati N, Jayashree A, Pooja B, Suvarna N.
+![Step 64](./Images/image%2064.png)
+![Step 65](./Images/image%2065.png)
+![Step 66](./Images/image%2066.png)
+
+---
 
 </details>
 
