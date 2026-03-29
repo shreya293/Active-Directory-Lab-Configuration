@@ -317,7 +317,6 @@ The final "Proof of Concept" is verified within **Active Directory Users and Com
 ![Final Verification](./Images/image%2041.png)
 
 </details>
----
 
 </details>
 
