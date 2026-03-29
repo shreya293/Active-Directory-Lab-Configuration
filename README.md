@@ -315,21 +315,17 @@ The Windows Client Machine, assign to **LAB1** which automatically receives an I
 #### 7. Final Domain Success Check: ADUC Verification
 The final "Proof of Concept" is verified within **Active Directory Users and Computers (ADUC)**. We can confirm that the client machine (`DESKTOP-UHG2A68`) and clicking on it we see it is now a registered member of the **`singh.com/Domain Computers`** group.
 ![Final Verification](./Images/image%2041.png)
-</details>
 
 ---
-<br>
-</details>
 
+</details>
 <a name="phase-5-client-workstation-integration"></a>
 ## 💻 Phase 5: Client Workstation Integration
 
 This phase documents the final provisioning of the Windows 11 Pro workstation, including system activation, manual IP configuration for the LAB1 segment, and the official join to the `singh.com` domain.
 <details>
 <summary><b>▶ Click to view Client Integration steps & screenshots</b></summary>
-
 <br>
-
 #### 1. System Personalization & Activation (Grouped)
 The workstation is initialized. We verify the system identity as **Administrator** and proceed with Windows Activation. We enter the product key to upgrade the environment to **Windows 11 Pro**, which is required for Enterprise Domain features.
 ![Step 42](./Images/image%2042.png)
