@@ -146,7 +146,7 @@ At this point, the core lab environment is physically (virtually) built:
 * 🌐 **[View Phase 4.3: Network Infrastructure & Domain Verification](#phase-4-3-network-infrastructure-verification)** — *LAB1 segmentation, DHCP Scope, and Client Connectivity test.*
 ---
 <a name="phase-4-1-server-role-configuration"></a>
-## 🚀 Phase 4.1: Server Role Configuration
+### 🚀 Phase 4.1: Server Role Configuration
 
 This module documents the initial deployment of **Active Directory Domain Services (AD DS)** and essential server features.
 
@@ -192,7 +192,7 @@ Note: restart the system once to ensure your roles and features are added correc
 This sub-module documents the initial configuration of the Windows Server environment, specifically focusing on the deployment of Active Directory Domain Services (AD DS).
 
 <a name="phase-4-2-domain-controller-promotion"></a>
-## 🌳 Phase 4.2: Domain Controller Promotion (singh.com)
+### 🌳 Phase 4.2: Domain Controller Promotion (singh.com)
 
 After role installation, the server must be promoted to a Domain Controller to establish the forest root. This module documents the configuration of the **singh.com** identity infrastructure.
 
@@ -258,7 +258,7 @@ The Windows Server initializes with its new identity. Upon logging in, the admin
 </details>
 
 <a name="phase-4-3-network-infrastructure-verification"></a>
-## 🌐 Phase 4.3: DHCP Scope & Network Segmentation (LAB1)
+### 🌐 Phase 4.3: DHCP Scope & Network Segmentation (LAB1)
 
 This module documents the isolation of the lab environment using a **LAN Segment (LAB1)** and the configuration of the **DHCP Server Role** to automatically provision IP addresses.
 
