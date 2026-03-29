@@ -334,6 +334,7 @@ Active Directory is the heart of identity management. This module documents the 
 
 #### 1. Organizational Unit (OU) Hierarchy
 To maintain a professional and manageable directory, we establish a **Role-Based OU Structure**. This allows for the separate application of Group Policies (GPO) to different business departments.
+
 click on domain(singh.com) then click on new - OU: it is used to create a groups (teams)
 * **Departments Created:** `Finance and Accounting`, `Sales and Marketing`, and `Operational and Logistic`.
 ![Step 52](./Images/image%2052.png)
@@ -344,6 +345,7 @@ click on domain(singh.com) then click on new - OU: it is used to create a groups
 
 #### 2. Detailed User Provisioning (Alice M)
 We walk through the creation of a standard domain user within the **Finance and Accounting** OU. This includes defining the **User Logon Name (UPN)** and setting secure password parameters.
+
 for creating a user: click on team(group) created - New - User: enter the users details and set a very strong password for users login.
 ![Step 55](./Images/image%2055.png)
 ![Step 56](./Images/image%2056.png)
@@ -355,7 +357,7 @@ for creating a user: click on team(group) created - New - User: enter the users 
 
 #### 3. Security Policy: Logon Hour Restrictions
 Following the **Principle of Least Privilege**, we implement time-based restrictions. For user `Alice M`, logon is permitted only during business hours (**Sunday to Thursday, 06:00 AM to 12:00 PM**). Any attempt to access the domain outside these hours will be denied by the Domain Controller.
-Assign address for user Alice, clck on logon hours to assign login/logout timings
+Assign address for user Alice, click on logon hours to assign login/logout timings
 ![Step 60](./Images/image%2060.png)
 ![Step 61](./Images/image%2061.png)
 ![Step 62](./Images/image%2062.png)
@@ -364,9 +366,10 @@ Assign address for user Alice, clck on logon hours to assign login/logout timing
 ---
 
 #### 5. Departmental Verification (Final User List)
-The departmental OUs are now fully populated with active users, each ready to be managed under specific security and access policies.
-To ensure data accuracy for administrative audits, we included **Office Description** and **International Address Details (Dubai, UAE)**.
+The departmental OUs are now fully populated with active users, each ready to be managed under specific security and access policies. To ensure data accuracy for administrative audits, we included **Office Description** and **International Address Details (Dubai, UAE)**.
+
 here we have created 4 users in each groups
+
 * **Finance:** Alice M, Bob A, Charlis D, Veer L.
 * **Operational:** Aarav Y, Advat A, Ishani J, Kyra S.
 * **Sales:** Bharati N, Jayashree A, Pooja B, Suvarna N.
