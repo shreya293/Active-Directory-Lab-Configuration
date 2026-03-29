@@ -321,8 +321,6 @@ The final "Proof of Concept" is verified within **Active Directory Users and Com
 <br>
 </details>
 
-
-
 <a name="phase-5-client-workstation-integration"></a>
 ## 💻 Phase 5: Client Workstation Integration
 
