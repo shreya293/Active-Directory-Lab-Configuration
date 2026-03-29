@@ -321,20 +321,19 @@ The final "Proof of Concept" is verified within **Active Directory Users and Com
 <br>
 </details>
 
-* 💻 **[View Phase 5: Client Workstation Integration](#phase-5-client-workstation-integration)** — *Windows 11 deployment, Domain Join, and Network Verification.*
+
 
 <a name="phase-5-client-workstation-integration"></a>
 ## 💻 Phase 5: Client Workstation Integration
 
 This phase documents the final provisioning of the Windows 11 Pro workstation, including system activation, manual IP configuration for the LAB1 segment, and the official join to the `singh.com` domain.
-
 <details>
 <summary><b>▶ Click to view Client Integration steps & screenshots</b></summary>
 
 <br>
 
 #### 1. System Personalization & Activation (Grouped)
-**Steps 42-45:** The workstation is initialized. We verify the system identity as **Shreya S** and proceed with Windows Activation. We enter the product key to upgrade the environment to **Windows 11 Pro**, which is required for Enterprise Domain features.
+**Steps 42-45:** The workstation is initialized. We verify the system identity as **Administrator** and proceed with Windows Activation. We enter the product key to upgrade the environment to **Windows 11 Pro**, which is required for Enterprise Domain features.
 ![Step 42](./Images/image%2042.jpg)
 ![Step 45](./Images/image%2045.jpeg)
 
