@@ -211,6 +211,7 @@ Following the AD DS role installation, a notification in Server Manager indicate
 
 #### 2. Deployment Configuration: New Forest Creation
 We select **"Add a new forest"** and define the Root Domain Name as `singh.com`. This initializes the top-level container for all future network objects.
+When you install Active Directory for the first time on a server, that server acts as the primary anchor for the entire AD deployment. The Forest Root holds critical forest-wide security roles (like Enterprise Admins and Schema Admins), controls the directory schema, and serves as the root of the trust hierarchy for any future domains added to that environment.
 ![Step 7](./Images/image%207.png)
 
 ---
@@ -229,6 +230,7 @@ The wizard prepares the DNS integration. A warning about delegation is standard 
 
 #### 5. NetBIOS Name Assignment
 The system verifies and assigns the NetBIOS name `SINGH`. This ensures legacy compatibility for naming services across the network.
+NetBIOS (Network Basic Input/Output System) allows applications on separate computers to communicate over a local area network (LAN).
 ![Step 10](./Images/image%2010.png)
 
 ---
